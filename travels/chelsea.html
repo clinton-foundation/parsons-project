@@ -8,6 +8,8 @@
 	<link href="../assets/css/style.css" media="all" rel="stylesheet">
 	<!-- Extra JS -->
 	<script src="../assets/js/jquery.js"></script>
+	<!-- Extra CSS -->
+	<link rel="stylesheet" href="../assets/css/jquery-ui.css">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
 		</div>
 
 		<div class="title">
-			<h1><span>Clinton School of Public Service<br/>Student Hometowns and Field Service Projects</span></h1>
+			<h1><span>International Travel by President Clinton,<br/>Secretary Clinton, and Chelsea Clinton</span><br/></h1>
 		</div>
 	</header> <!-- END OF header -->
 
@@ -45,44 +47,37 @@
 		</nav>
 
 		<nav class="control-wrapper">
-			<ul class="control-nav">
-				<li class="sub">	
-					<a class="current" href="#">Project Type</a>	
-					<ul class="left">		
-						<li><a href="index.html">All Scholars &amp; Service Projects</a></li>
-						<li><a href="home-origin.html">All Scholar Hometowns</a></li>
-				        <li><a href="service-projects.html">All Service Projects</a></li>
-				        <li><a href="capstone.html">Capstone</a></li>
-				        <li><a href="ipsp.html">International Public Service Projects</a></li>
-				        <li><a class="current" href="practicums.html">Practicums</a></li>
-			      </ul>                
-				<li class="sub">	
-					<a href="#">Class Year</a>	
-					<ul class="left">		
-						<li><a href="class1.html">Class 1 Scholars</a></li>
-				        <li><a href="class2.html">Class 2 Scholars</a></li>
-				        <li><a href="class3.html">Class 3 Scholars</a></li>
-				        <li><a href="class4.html">Class 4 Scholars</a></li>
-				        <li><a href="class5.html">Class 5 Scholars</a></li>
-				        <li><a href="class6.html">Class 6 Scholars</a></li>
-				        <li><a href="class7.html">Class 7 Scholars</a></li>
-				        <li><a href="class8.html">Class 8 Scholars</a></li>
-				        <li><a href="class9.html">Class 9 Scholars</a></li>
-				        <li><a href="class10.html">Class 10 Scholars</a></li>
-			    </ul> 
-			</ul>
+			<ul class="control-nav ">
+				<li class="sub nav-travels"><a href="index.html">All</a></li>
+				<li class="sub nav-travels"><a href="president.html">President Clinton</a></li>
+				<li class="sub nav-travels"><a href="secretary.html">Secretary Clinton</a></li>
+				<li class="sub nav-travels"><a class="current" href="chelsea.html">Chelsea Clinton</a></li>
+	    	</ul>              
 		</nav>
 
-		<div class="legend-wrapper" id="line">
+		<div class="legend-wrapper legend-travels" id="color-range">
 			<h4>Legend</h4>
-			<div class="row"><div class="line-block line1"></div><p>Hometown</p><br/></div>
-			<div class="row"><div class="line-block line2"></div><p>Capstone</p><br/></div>
-			<div class="row"><div class="line-block line3"></div><p>IPSP</p><br/></div>
-			<div class="row"><div class="line-block line4"></div><p>Practicums</p><br/></div>
+			<div class="row"><div class="block color1"></div><p>President Clinton</p><br/></div>
+			<div class="row"><div class="block color2"></div><p>Secretary Clinton</p><br/></div>
+			<div class="row"><div class="block color4"></div><p>Chelsea Clinton</p><br/></div>
 		</div>
 
-		<div id="map-wrapper" class="student_visitors">
-			<iframe width="722" height="530" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=609b66b8b9f647659f6f34733110caf1&amp;extent=-180,-57.1764,180,78"></iframe>
+		<div id="map-wrapper" class="travels_chelsea_map">
+			<iframe width="722" height="426" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=effd9da7fd8f48e49cabbfe9a0957ef4&amp;extent=-180,-51.7184,180,83.462"></iframe>
+
+		</div>
+
+		<div class="timeline-wrapper">
+			<div id="slider"></div>
+			<img id="slider-markers-travels" src="../assets/images/slider-with-markers-travels.png">
+			<div class="timeline-travels">
+				<p class="timeline-year-first" id="y93">1993&#8211;1995</p>
+				<p class="timeline-year" id="y96">1996&#8211;1999</p>
+				<p class="timeline-year" id="y00">2000&#8211;2003</p>
+				<p class="timeline-year" id="y04">2004&#8211;2008</p>
+				<p class="timeline-year" id="y04">2009&#8211;2013</p>
+				<p id="y14">2014</p>
+			</div>
 		</div>
 
 	</div> <!-- END OF body-wrapper -->
@@ -98,11 +93,15 @@
 		</div>
 	</div>
 
-
 <div class="disclaimer-wrapper"></div>
 
 <!-- JS Disclaimer -->
 <script src="../assets/js/disclaimer.js"></script>
+
+<!-- JS Map -->
+<script src="../assets/js/jquery-ui.js"></script>
+<script src="../assets/js/slider-travels.js"></script>
+
 </body>
 
 </html>

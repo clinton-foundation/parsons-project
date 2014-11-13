@@ -1092,8 +1092,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 			.addClass( "ui-slider" +
 				" ui-slider-" + this.orientation +
 				" ui-widget" +
-				" ui-widget-content" +
-				" ui-corner-all");
+				" ui-widget-content");
 
 		this._refresh();
 		this._setOption( "disabled", this.options.disabled );

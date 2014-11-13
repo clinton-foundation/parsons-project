@@ -11,8 +11,6 @@ $(function() {
 	$( "#amount" ).val($( "#slider" ).slider( "value" ) );
 });
 
-
-
 var display_year = [
 '2005',
 '2006',
@@ -37,6 +35,7 @@ var cpc_visitors_map = [
 '3c0008d876e8442a8ef672004b1fd625',
 'f34c1b3846394524823ca55d7f0b0a7f',
 '3abea536a6064257831474796d8e987d']
+
 
 var student_visitors_map = [
 'f9b40ada1c6b4f0a8ccb32cd7f6774e7',
@@ -74,17 +73,32 @@ $('#slider').click(function() {
 		console.log('cpc visitors');
 		for (var i = 0; i < 10; i++) {	
 			if (selected_year == display_year[i]) {
-				$('.cpc_visitors').html('<iframe width="730" height="426" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=' + cpc_visitors_map[i] + '&amp;extent=-131.8755,21,-62,52&amp;home=true&amp;zoom=true"></iframe>')
+				$('.cpc_visitors').html('<iframe width="722" height="426" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=' + cpc_visitors_map[i] + '&amp;extent=-124.3132,28.9146,-70.3484,45&amp;home=true&amp;zoom=true"></iframe>')
+
+				// //if display year = 2009, change legend ranges
+				// if (display_year[i] == 2009) {
+				// 	console.log(display_year[i]);
+				// 	$('.num_range1 p').html('&le; 500');
+				// 	$('.num_range2 p').html('&le; 2,000');
+				// 	$('.num_range3 p').html('&le; 10,000');
+				// 	$('.num_range4 p').html('&le; 30,000');
+				// 	$('.num_range5 p').html('&le; 134,000');
+				// } else if (display_year[i] != 2009){
+				// 	$('.num_range1 p').html('&le; 100');
+				// 	$('.num_range2 p').html('&le; 400');
+				// 	$('.num_range3 p').html('&le; 1,000');
+				// 	$('.num_range4 p').html('&le; 2,000');
+				// 	$('.num_range5 p').html('&le; 6,000');
+				// };
 			};
-		}
-	} else if ( className == 'student_visitors') {
+		};
+
+	}  else if ( className == 'student_visitors') {
 		console.log('student');
 		for (var i = 0; i < 10; i++) {	
 			if (selected_year == display_year[i]) {
-				$('.student_visitors').html('<iframe width="730" height="426" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=' + student_visitors_map[i] + '&amp;extent=-131.8755,21,-62,52&amp;home=true&amp;zoom=true"></iframe>')
+				$('.student_visitors').html('<iframe width="722" height="426" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cdimalawi.maps.arcgis.com/home/webmap/embedViewer.html?webmap=' + student_visitors_map[i] + '&amp;extent=-124.3132,28.9146,-70.3484,45"></iframe>')
 			};
-		}
-	} else {
-
+		};
 	};
 });

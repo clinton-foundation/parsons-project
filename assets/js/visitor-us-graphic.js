@@ -531,12 +531,12 @@ google.setOnLoadCallback(drawChart);
     // Set chart options
     var options = {
       width: 722,
+      height: 2000,
       sankey: {
-        link: {color: {fill: '#5492c0' } },  
-        node: { label: { fontName: 'Open Sans 300',
+        link: {color: {fill: '#8ECAE9;' } },  
+        node: { label: { fontName: 'Open Sans 400',
                          fontSize: 14,
-                         color: '#fff',
-                         bold: true } } },
+                         color: '#fff'} } },
     };
 
     // Instantiate and draw our chart, passing in some options.

@@ -78,7 +78,7 @@ google.setOnLoadCallback(drawChart);
       sankey: {
        
         link: {color: {fill: '#5492c0'} },  
-        node: { label: { fontName: 'Museo Sans 300',
+        node: { label: { fontName: 'Open Sans ',
                          fontSize: 18,
                          color: '#fff',
                          bold: true } } },
